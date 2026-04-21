@@ -1,7 +1,13 @@
+import Hero from './Hero'
+import Specials from './Specials'
+
 function Main() {
   return (
     <>
-        Homepage
+      <main>
+        <Hero />
+        <Specials />
+      </main>
     </>
   );
 }
