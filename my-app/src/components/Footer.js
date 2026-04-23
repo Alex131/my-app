@@ -19,6 +19,7 @@ function Footer() {
         <section>
           <h5>Social Media Links</h5>
           <a href="facebook.com">Facebook</a>
+          <br/>
           <a href="instagram.com">Instagram</a>
         </section>
       </footer>

@@ -1,9 +1,12 @@
-function Card({ title, price, text }) {
+function Card({ title, price, description, image }) {
   return (
     <div className="card">
+      <img src={image} alt={title} />
       <div className="card-body">
-        <h3>Title <span>Price</span></h3>
-        <p>Text</p>
+        <h3>
+          {title} <span>{price}</span>
+        </h3>
+        <p>{description}</p>
         <button>Order a delivery</button>
       </div>
     </div>

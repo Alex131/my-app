@@ -1,29 +1,18 @@
-import Card from './Card'
+import specials from "../data/specials";
+import Card from "./Card";
 
 function Specials() {
   return (
     <section className="specials">
       <div className="specials-header">
-        <h2>This week's specials!</h2>
-        <button className="btn-primary">Online Menu</button>
+        <h2>Specials</h2>
+        <a href="#" role="button" className="btn-primary">Online Menu</a>
       </div>
 
       <div className="cards">
-        <Card
-          title="Greek Salad"
-          price="$12.99"
-          text="Crispy lettuce, peppers, olives and feta cheese."
-        />
-        <Card
-          title="Bruschetta"
-          price="$5.99"
-          text="Grilled bread with garlic and olive oil."
-        />
-        <Card
-          title="Lemon Dessert"
-          price="$5.00"
-          text="Grandma’s traditional lemon recipe."
-        />
+        {specials.map((item) => (
+          <Card key={item.id} {...item} />
+        ))}
       </div>
     </section>
   );
