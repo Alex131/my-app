@@ -1,6 +1,7 @@
 .App {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 #root {
@@ -286,16 +287,56 @@ footer img {
   }
 }
 
+.booking-page {
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
 .booking-form {
   display: grid;
-  gap: 1rem;
-  max-width: 400px;
+  gap: 2rem;
+  max-width: 600px;
   margin: 2rem auto;
+
+  input,
+  select {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background: #EDEFEE;
+    color: #000;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+.booking-page-header {
+  max-width: 600px;
+  margin: auto;
+
+  a {
+    font-size: 16px;
+  }
+
+  img {
+    width: 14px;
+    margin-right: 10px;
+  }
 }
 
 .booking-form label {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem
 }
 
 .booking-form span {
@@ -342,4 +383,11 @@ footer img {
   img {
     width: 100px;
   }
+}
+
+.confirmed {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
 }

@@ -12,6 +12,7 @@ import Hero from './components/Hero'
 import Home from "./pages/Home";
 import BookingPage from "./pages/BookingPage";
 import ConfirmedBooking from "./pages/ConfirmedBooking";
+import MainBooking from "./components/MainBooking"
 
 import { BookingProvider } from "./context/BookingContext";
 
@@ -28,7 +29,12 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/reservations" element={<BookingPage />} />
+              <Route
+                path="/reservations"
+                element={
+                  <MainBooking />   // not BookingPage directly
+                }
+              />
               <Route path="/confirmed" element={<ConfirmedBooking />} />
             </Routes>
           </main>
